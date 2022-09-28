@@ -1,0 +1,82 @@
+:root {
+  --background-color: white;
+  --textcolor: black;
+  --nav-color: rgb(156, 156, 156);
+  --article-color: red;
+  --article-border-color: blue;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--background-color);
+  /*color: var(--text-color);*/
+  margin: 0;
+}
+[data-theme="dark"] {
+  --background-color: #3f3f3f;
+  --text-color: #fff;
+  --nav-color: black;
+}
+/*[data-theme="light"] {
+  --background-color: white;
+  --textcolor: black;
+  --nav-color: rgb(156, 156, 156);
+  --article-color: red;
+  --article-border-color: blue;
+}*/
+.navbar {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--nav-color);
+}
+.navbar ul li {
+  float: left;
+}
+.navbar ul #right-element {
+  float: right;
+}
+.navbar ul li a {
+  display: inline-block;
+  color: rgb(3, 201, 201);
+  font-family: 'Noto Sans Mono';
+  font-size: 14px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  box-sizing: content-box;
+  background-color: red;
+  transition: color 0.85s, background-color 0.85s;
+}
+
+hr {
+  margin: 10px;
+}
+
+article {
+  margin: 10px;
+  background-color: var(--article-color);
+  width: 320px;
+  border: 2px solid var(--article-border-color);
+  display: inline-block;
+}
+article p {
+  margin-left: 7em;
+}
+.article-overview {
+  margin-top: 100px;
+}
+.article-overview article img {
+  width: 5em;
+  height: 3em;
+  padding: 2em;
+}
